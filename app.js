@@ -14,6 +14,8 @@ rblxApi.getUsersSubbedSets = function(id, cb){
     cb(JSON.parse(data))
   })
 }
+
+/* Indevelopment ~ Refer to api.roblox.com/docs/ */
 rblxApi.getAssetsfromSet = function(id, num, page, cb){
   request('https://www.roblox.com/sets/' + id + '/items?num='+ num + '&page=' + page, (err, res, data) => {
     cb(JSON.parse(data))
